@@ -39,12 +39,13 @@
   <div class="overflow-hidden relative w-full">
       <!--Navbar-->
       <nav class="bg-deepBlue">
-        <div class="relative w-[1080px] mx-auto flex items-center justify-between ">
+        <div class="relative w-10/12 md:w-11/12 max-w-[1080px] mx-auto flex items-center justify-between ">
 
             <!-- logo -->
-            <a href="/" class="cursor-pointer py-7 pr-7">
+            <a href="#" class="cursor-pointer py-7 pr-7">
                 <img
                 src="./images/logo.svg"
+                alt=""
                 width="125px"
                 height="30px"/>
             </a>
@@ -108,7 +109,7 @@
                 </li>
             </ul>
 
-            <div class="flex space-x-6">
+            <div class="flex items-center space-x-6">
                 <img
                     src="./images/india-flag.svg"
                     width="28px"
@@ -116,10 +117,11 @@
                     class="hidden lg:block"
                     />
                 <button class="py-3 px-5 font-mullish text-white border-lightBlue border
-                rounded-sm text-sm  font-bold">Log in</button>
-                <button class="py-3 px-4 font-mullish rounded-sm text-sm font-bold
-                bg-white text-lightBlue300 border transition-all duration-200
-                hover:text-lightBlue500 hidden lg:flex">Sign Up
+                rounded-sm text-sm  font-bold block">Log in</button>
+
+                <button class="py-3 px-4 hidden lg:flex items-center font-mullish font-bold rounded-sm text-sm 
+                bg-white text-lightBlue300  transition-all duration-200
+                hover:text-lightBlue border ">Sign Up
                 <svg
                 viewBox="0 0 24 24"
                 focusable="false"
@@ -129,7 +131,16 @@
                   fill="currentColor"
                   d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
                 ></path>
-              </svg></button>
+              </svg>
+            </button>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+            class="feather feather-menu text-white text-xs cursor-pointer lg:hidden "><line x1="3" 
+            y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" 
+            x2="21" y2="18"></line>
+            </svg>
+
             </div>
 
 
@@ -897,16 +908,16 @@
     </section>
 
     <!--new feeatures -->
-    <section class="bg-white relative">
-        <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+    <section class=" relative">
+        <div class="relative w-11/12 md:11/12 max-w-[1080px] mx-auto pt-4">
             <img src="./images/feature-section1-dottedrows.png" alt=""
-            class="absolute w-[233px] left-[300px] -top-[6rem] z-10">
+            class="absolute w-[233px] left-[300px] -top-[6rem] z-10" loading="lazy">
             <img src="./images/feature-section1-dottedrows.png" alt=""
-            class="absolute w-[233px] -right-[3.5rem] -top-[6rem] z-10" >
+            class="absolute w-[233px] -right-[3.5rem] -top-[6rem] z-10" loading="lazy" >
 
-            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-4 relative z-[100]">
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-4 z-[100]">
                 <!--item 1-->
-                <div class="relative flex items-center z-0">
+                <div class="relative flex justify-center items-center z-0">
                     <h2
                     class="text-deepBlueHead font-mullish font-extrabold text-4xl leading-[3.375rem]"
                     >New in the
@@ -918,7 +929,7 @@
                 </div>
                 <!--card 1-->
                 <div
-                class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
+                class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] drop-shadow-lg cursor-pointer
                 bg-no-repeat hover:scale-105 transition-all duration-200
                 hover:bg-[url(/images/instant-settlement-bghover.svg)]
                 bg-white" >
@@ -941,7 +952,7 @@
                 </div>
                 <!--card 2-->
                 <div
-                class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
+                class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] drop-shadow-lg cursor-pointer
                 bg-no-repeat hover:scale-105 transition-all duration-200
                 hover:bg-[url(/images/instant-settlement-bghover.svg)] bg-white" >
                     <img src="./images/razorpayXicon.svg" alt=""
@@ -963,7 +974,7 @@
                 </div>
                 <!--card 3-->
                 <div
-                class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
+                class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] drop-shadow-lg cursor-pointer
                 bg-no-repeat hover:scale-105 transition-all duration-200
                 hover:bg-[url(/images/instant-settlement-bghover.svg)] bg-white" >
                     <img src="./images/razorpayXicon.svg" alt=""
@@ -985,7 +996,7 @@
                 </div>
                 <!--card 4-->
                 <div
-                class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
+                class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] drop-shadow-lg cursor-pointer
                 bg-no-repeat hover:scale-105 transition-all duration-200
                 hover:bg-[url(/images/instant-settlement-bghover.svg)] bg-white" >
                     <img src="./images/razorpayXicon.svg" alt=""
@@ -1007,7 +1018,7 @@
                 </div>
                 <!--card 5-->
                 <div
-                class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
+                class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] drop-shadow-lg cursor-pointer
                 bg-no-repeat hover:scale-105 transition-all duration-200
                 hover:bg-[url(/images/instant-settlement-bghover.svg)] bg-white" >
                     <img src="./images/razorpayXicon.svg" alt=""
@@ -1034,7 +1045,9 @@
     <!--core features-->
     <section class="w-full bg-[url(/images/core-features-sectionBg.svg)] 
     bg-no-repeat bg-cover bg-center mt-14 relative corefeaturesection">
-        <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+        <div class="relative w-10/12 md:w-11/12 max-w-[1080px] mx-auto pb-14 pt-48
+        md:pb-4 lg:pb-4 md:pt-4 lg:pt-4">
+
             <h2 class="font-mullish font-bold text-2xl text-center text-white">Features</h2>
             <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
             <p
@@ -1052,30 +1065,31 @@
                 </div>
                 <!--card2-->
                 <div>
-                    <img src="./images/instant-activation-icon.svg" alt=""
+                    <img src="./images/easy-integration.svg" alt=""
                     >
-                    <h3 class="font-mullish text-white text-lg font-bold my-4">Instant Activation</h3>
-                    <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+                    <h3 class="font-mullish text-white text-lg font-bold my-4">Easy Integration</h3>
+                    <p class="font-mullish text-white opacity-80"> With plugins for all major platforms and languages, integrate and go
+                      live with Razorpay in less than an hour.</p>
                 </div>
                 <!--card3-->
                 <div>
-                    <img src="./images/instant-activation-icon.svg" alt=""
+                    <img src="./images/api-driven-icon.svg" alt=""
                     >
-                    <h3 class="font-mullish text-white text-lg font-bold my-4">Instant Activation</h3>
+                    <h3 class="font-mullish text-white text-lg font-bold my-4">API Driven</h3>
                     <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
                 </div>
                 <!--card4-->
                 <div>
-                    <img src="./images/instant-activation-icon.svg" alt=""
+                    <img src="./images/payment-modes.svg" alt=""
                     >
-                    <h3 class="font-mullish text-white text-lg font-bold my-4">Instant Activation</h3>
+                    <h3 class="font-mullish text-white text-lg font-bold my-4">100+ payment modes</h3>
                     <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
                 </div>
                 <!--card5-->
                 <div>
-                    <img src="./images/instant-activation-icon.svg" alt=""
+                    <img src="./images/simple-pricing.svg" alt=""
                     >
-                    <h3 class="font-mullish text-white text-lg font-bold my-4">Instant Activation</h3>
+                    <h3 class="font-mullish text-white text-lg font-bold my-4"> Simple Pricing</h3>
                     <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
                 </div>
                 <!--card6-->
@@ -1108,10 +1122,10 @@
 
     <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-[100] ">
 
-      <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-col md:flex-row ">
+      <div class="w-10/12 md:w-11/12 max-w-[1080px] pt-14 md:pt-4 mx-auto relative md:flex ">
 
         <!--left part-->
-        <div class="flex flex-col justify-center w-full md:max-w-[calc(100%-500px)] sm:-my-16 ">
+        <div class=" md:max-w-[calc(100%-500px)] md:flex md:flex-col md:justify-center ">
           <h2 class="font-mullish font-bold text-2xl text-deepBlueHead">Join the 50,00,000+ businesses using Razorpay
           </h2>
           <div class=" w-6 h-1 bg-greenLight my-4 mb-10  "> </div>
@@ -1121,9 +1135,9 @@
         </div>
 
         <!--right part-->
-        <div class="h-[500px] w-[500px] relative overflow-y-hidden mx-auto">
+        <div class="h-[500px] md:w-[500px] mt-24 md:mt-0 relative overflow-y-hidden ">
           <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
-          class="absolute w-full h-[150px] top-0 z-50">
+          class="absolute w-full h-[150px] bottom-0 z-50">
 
           </div>
           <img src="./images/comanies.png" alt="" width="500px"
@@ -1153,7 +1167,7 @@
       
 
        <!--left button-->
-       <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute left-0 top-1/2
+       <button class="w-[36px] h-[36px] md:w-[100px] md:h-[100px] bg-[#f4f8ff] rounded-full absolute left-0 top-1/2
        flex justify-center items-center">
         <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center
         mix-blend-multiply">
@@ -1165,37 +1179,60 @@
        </button>
 
         <!--right button-->
-       <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute right-0 top-1/2
+       <button class="w-[36px] h-[36px] md:w-[100px] md:h-[100px] bg-[#f4f8ff] rounded-full absolute right-0 top-1/2
        flex justify-center items-center">
         <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center
         mix-blend-multiply">
           <i  data-feather="chevron-right"
-          class="stroke-[5px] w-6 h-6 md:h-10 text-gray-400"
+          class="stroke-[5px] text-gray-400"
           ></i>
         </div>
        </button>
 
        <!--main content-->
-       <div class="flex flex-col xl:flex-row max-w-[960px] items-center mx-auto my-20 space-x-[10rem]">
+       <div class="flex flex-col lg:flex-row max-w-[960px] items-center mx-auto my-20 lg:space-x-[10rem]">
         <!--left image-->
-        <img src="./images/testimonial.jpg" alt=""
+        <img src="./images/anshuimg.jpg" alt=""
         height="320px"
         width="320px"
-        class="rounded-xl">
+        class="rounded-xl object-cover h-[250px] w-[250px] md:h-[320px] md:w-[320px]">
 
         <!--right part-->
-        <div class="max-w-[400px] flex flex-col ">
-          <img src="./images/quotes.svg" alt=""
-          width="35px"
-          height="40px"
-          class="-mb-2 xl:order-1">
-          <p class="font-mullish text-3xl font-extralight xl:order-1">
-            Readymade Closed Wallet Solution For Quick Refunds</p>
-          <a href="#" class="text-grayText italic underline xl:order-1">Learm More</a>
-          <h3 class="font-mullish font-extrabold text-2xl -order-1 xl:order-1">Lorem Ipsum</h3>
-          <p class="font-mullish font-medium xl:order-1">CEO, XYZ Engineering Company</p>
-          <img src="./images/fake-company-logo.png" alt="" width="80px" height="40px" class="xl:order-1">
-        </div>
+         <!-- for-mobile -->
+         <div class="lg:hidden mt-4 ">
+          <p class="font-mullish font-extrabold text-2xl text-center">
+            Anshu Kumar
+          </p>
+          <p class="font-mullish font-medium text-center my-2">
+            CEO, XYZ Engineering Company
+          </p>
+          <img src="/images/fake-company-logo.png" width="80" height="40" class="object-cover mx-auto">
+          <img src="/images/quotes.svg" class="w-[35px] h-[40px] -mb-2">
+          <p class="font-mullish text-3xl font-extralight max-w-[300px]">
+            Readymade Closed Wallet Solution For Quick Refunds
+          </p>
+          <button class="italic underline text-sm text-grayText">
+            Learn More
+          </button>
+      </div>
+
+        <!-- large-screens -->
+        <div class="hidden lg:block max-w-[400px]">
+          <img src="/images/quotes.svg"
+              width="35px"
+              height="40px"
+              class="-mb-2" alt="">
+          <p class="font-mullish text-3xl font-extralight opacity-60">
+              Improved The Bottom Line <br> With Cash-Like Collection
+          </p>
+          <a href="#" class="text-grayText italic underline">Learn More</a>
+          <h3 class="font-mullish font-extrabold text-2xl">Anshu Kumar</h3>
+          <p class="font-mullish font-medium">CEO, XYZ Company</p>
+          <img src="/images/fake-company-logo.png"
+          width="80px" height="40px" alt="">
+      </div>
+
+
        </div>
 
         <!--6 dot wala div-->
